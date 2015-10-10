@@ -10,7 +10,7 @@ if [ -z "$DIR" ]; then
 	exit 1
 fi
 
-TYPES=( mov mp4 avi mkv m4v xvid divx wmv mpg mpeg )
+TYPES=( mov qt mp4 avi mkv m4v xvid divx wmv mpg mpeg webm flv vob ogg 3gp 3gp2 )
 
 # Create a regex of the extensions for the find command
 TYPES_RE="\\("${TYPES[1]}
