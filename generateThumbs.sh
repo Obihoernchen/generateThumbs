@@ -19,7 +19,7 @@ for t in "${TYPES[@]:1:${#TYPES[*]}}"; do
 done
 TYPES_RE="${TYPES_RE}\\)"
 
-find "$DIR" -regex ".*\.${TYPES_RE}" -type f | while read -r FILEPATH
+find -L "$DIR" -regex ".*\.${TYPES_RE}" -type f | while read -r FILEPATH
 do
 	printf "%s\n" "--- Start Thumbnailcreation for ---"
 	printf "%s\n" "$FILEPATH"
